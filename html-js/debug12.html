@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+         
+        function bar(){
+            var foo = 0;
+            function foo(){
+               // return typeof foo;
+               
+
+               document.write (typeof (foo));//RETURNS UNDEFINED.
+               
+            
+
+            }
+            document.write(typeof(foo));
+
+        }
+        document.getElementById("demo").innerHTML=bar();
+        
+
+    </script>
+</body>
+</html>

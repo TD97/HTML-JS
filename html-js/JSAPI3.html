@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <h2>Input Validation</h2>
+    <input id="text1" type="number" max="200" >
+    <button onclick="validate()">Validate</button>
+    <p id="demo"></p>
+    <script>
+        function validate(){
+            let text;
+           
+            if(document.getElementById("text1").validity.rangeOverflow){
+                text="Value too large";
+
+            }else{
+                text="ok";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>

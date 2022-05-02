@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p name="func"></p>
+    <p name="func"></p>
+    <p name="func"></p>
+    <p name ="func"></p>
+    <p name="func"></p>
+    <script>
+        function func1(arg1,arg2){
+            return arg1+arg2;
+
+
+        }
+        function func2(arg1,arg2){
+            return arg2-arg1;
+
+        }
+        function func3(arg1,arg2){
+            return arg1*arg2;
+        }
+        function func4(arg1,arg2){
+            return arg1/arg2;
+        }
+        function display(num){
+         for(num=0;num<=10;num++)
+         document.write(num);
+        }
+
+     document.getElementsByName("func")[1].innerHTML=func1(10,20);
+     document.getElementsByName("func")[0].innerHTML=func2(30,20);
+     document.getElementsByName("func")[2].innerHTML=func3(22,2);
+     document.getElementsByName("func")[3].innerHTML=func4(20,5);
+     document.getElementsByName("func")[4].innerHTML=display(5);
+
+
+     function square(number1){
+         alert(number1 * number1);
+     }
+     
+    </script>
+    <button type="button" onclick="square(5)">Square</button>
+    
+    
+</body>
+</html>

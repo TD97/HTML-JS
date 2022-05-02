@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: larger;background-color: antiquewhite;">
+    <p id="date1"></p>
+    <p id="date2"></p>
+    <p id="date3"></p>
+    <p id="date4"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        let date=new Date();
+        let date2= new Date(2022,02,28,14,28,34,105);
+        let date3 = new Date(2022,02);
+        let date4=new Date(100000000000);
+        let date5= new Date(1648490000000);
+        document.getElementById("date1").innerHTML=date.getDate();
+        document.getElementById("date2").innerHTML=date.getTimezoneOffset();
+        document.getElementById("date3").innerHTML=date.setDate(23);
+        document.getElementById("date4").innerHTML=date.setFullYear(2024);
+        document.getElementById("demo4").innerHTML=date.getMonth();
+        document.getElementById("demo5").innerHTML=date.getHours();
+
+        document.getElementById("demo").innerHTML=date2;
+        document.getElementById("demo1").innerHTML=date3;
+        document.getElementById("demo2").innerHTML=date4;
+        document.getElementById("demo3").innerHTML=date5;
+
+
+    </script>
+    
+</body>
+</html>

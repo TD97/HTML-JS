@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table,th,td{
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 6px;
+    }
+    table,th,td{
+        background-color: aqua;
+    }
+    </style
+</head>
+<body>
+    <script>
+        let number1 = 40;
+        let number2 = 8;
+        let addition= number1+number2;
+        let subtraction = number1-number2;
+        let multiplication = number1*number2;
+        let division = number1/number2;
+        let modulus = number1%number2;
+        let increment = number1++;
+        let decrement = number2--;
+        let preincrement = ++number1;
+        document.writeln("addition result is"+addition);
+        document.write("<br>");
+        document.writeln("substraction result is"+subtraction);
+        document.write("<br>");
+        document.writeln("multiplication result is"+multiplication);
+        document.write("<br>");
+        document.writeln("division result is"+ division);
+        document.write("<br>");
+        document.writeln("modulus result is"+ modulus);
+        document.write("<br>");
+        document.writeln("increment result is" +increment);
+        document.write("<br>");
+        document.writeln("decrement result is"+decrement);
+        document.write("<br>");
+        document.writeln("preincrement result is" +preincrement);
+        document.write("<br>")
+        document.write(number1==number2);
+        document.write("<br>");
+        document.write(number1!=number2);
+
+    </script>
+    <table id="td1" >
+        <tr>
+            <th>addition</th>
+            <th>subtraction</th>
+            <th>multiplication</th>
+            <th>division</th>
+            <th>modulus</th>
+            <th>increment</th>
+            <th>decrement</th>
+        </tr>
+        <tr>
+            <td> <script>document.write(addition) </script></td>
+            <td><script>document.write(subtraction)</script></td>
+            <td><script>document.write(multiplication)</script></td>
+            <td><script>document.write(division)</script></td>
+            <td><script>document.write(modulus)</script></td>
+            <td><script>document.write(increment)</script></td>
+            <td><script>document.write(decrement)</script></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

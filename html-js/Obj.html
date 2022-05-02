@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="person1"></p>
+    <p id="person2"></p>
+    <p id="person3"></p>
+    <p id="person4"></p>
+    
+    <script>
+        const person = {
+            firstname : "Trisha",
+            lastname : "Das",
+            height: 167,
+            weight: 70,
+            age: 24,
+            fullname: function(){
+                return this.firstname+"   "+this.lastname;
+            },
+            BMIINDEX: function(){
+                return this.height/this.weight;
+            },
+            AGE: function(){
+                return this.age;
+            }
+
+        };
+        document.getElementById("person1").innerHTML= person.firstname+"   "+person.lastname;
+        document.getElementById("person2").innerHTML=person.fullname();
+        document.getElementById("person3").innerHTML=person.BMIINDEX();
+        document.getElementById("person4").innerHTML=person.AGE();
+    
+    </script>
+    
+</body>
+</html>
